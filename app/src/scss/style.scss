@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
-@import 
-"components/slider";
+//vendor
+@import "vendor/_icomoon";
 
-@import 
-"prueba/extasis";
+//base
+@import "base/_config",
+        "base/_fonts",
+        "base/_presets";
+
+//layout
+@import "layout/_header",
+        "layout/_section",
+        // "layout/_login",
+        "layout/_footer";

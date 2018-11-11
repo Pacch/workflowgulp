@@ -1,14 +1,7 @@
-doctype html
-html(lang='es', class=htmlClass)
-    head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title prueba
-        link(rel='stylesheet', href='css/style.css')
+extends layout
 
-    body
-
-        //- block content
-        p probando asdasdas asdasdas asdasd
-
-        script(src='js/main.js')
+block content
+    include inc/header
+    include inc/section
+    //- include inc/login
+    include inc/footer

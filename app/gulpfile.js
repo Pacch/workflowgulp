@@ -20,7 +20,7 @@ gulp.task('images', () => {
             })
         ]))
         .pipe($.size())
-        .pipe(gulp.dest('public/images'))
+        .pipe(gulp.dest('public/img'))
 });
 
 
@@ -78,7 +78,7 @@ gulp.task('templates', () => {
 gulp.task('scritp', () => {
     return gulp
         .src('src/js/**/*.js')
-        .pipe(s)
+        .pipe($.size())
         .pipe($.concat('main.js'))
         .pipe($.babel({
             presets: ['@babel/env']
