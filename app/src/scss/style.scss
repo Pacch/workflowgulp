@@ -1,15 +1,38 @@
 @charset "UTF-8";
 
 //vendor
-@import "vendor/_icomoon";
-
+@import "vendor/_icomoon",
+        "vendor/_owl";
 //base
 @import "base/_config",
         "base/_fonts",
+        "base/_media",
         "base/_presets";
+        
+//components
+@import 
+        "components/button",
+        "components/card",
+        "components/container",
+        "components/duotone",
+        "components/flex",
+        "components/loading-page",
+        "components/menu",
+        "components/nav-tab",
+        "components/search",
+        "components/separacion",
+        "components/slider";
+
+// block
+@import "blocks/footer",
+        "blocks/header";
+
+
 
 //layout
-@import "layout/_header",
-        "layout/_section",
-        // "layout/_login",
-        "layout/_footer";
+@import         
+        "page/blog",
+        "page/categorias",
+        "page/contacto",
+        "page/galeria",
+        "page/post";

@@ -1,23 +1,36 @@
 html {
     margin: 0;
     padding: 0;
-    // height: 100%;
+    color: #000;
 }
 
 body {
     @extend html;
     background: white;
     min-height: 100%;
-    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    font-family: $base-font-family;
 }
 
 li{
     list-style: none;
 }
+//estilos exclusivo para el uso de wordpress y no usar un p en maquetado !
+p{
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    width: inherit;
+    height: inherit;
+}
 
 a {
-    text-transform: uppercase;
+    text-transform: none;
     text-decoration: none;
+    // color: white;
 
     &:active,
     &:focus,
@@ -25,6 +38,7 @@ a {
         text-decoration: underline;
         text-decoration: none;
         outline: 0;
+        color: white;
     }
 }
 
@@ -35,5 +49,23 @@ a {
     &::before,
     &::after {
         @extend *;
+    }
+}
+
+
+input{
+    outline-color: transparent;
+    &:focus,
+    &:active{
+        outline-color: transparent;
+    }
+}
+
+
+
+.main{
+    min-height: calc(100vh - 149px);
+    @include tablet{
+        min-height: calc(100vh - 127px);
     }
 }

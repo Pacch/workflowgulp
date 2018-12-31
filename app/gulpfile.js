@@ -28,7 +28,6 @@ gulp.task('styles', () => {
     return gulp
         .src('src/scss/**/*.scss')
         .pipe($.size())
-        .pipe($.concat('style.css'))
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
         .pipe($.sass.sync({
